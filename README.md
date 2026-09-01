@@ -1,17 +1,31 @@
 # MartinMatousek Vaire
 
-## How do I install these formulae?
+Homebrew tap for [Vaire](https://github.com/MartinMatousek/Vaire), an
+automatic time tracker for macOS with Claude Code integration.
 
-`brew install martinmatousek/vaire/<formula>`
+## Install
 
-Or `brew tap martinmatousek/vaire` and then `brew install <formula>`.
+```
+brew install --cask martinmatousek/vaire/vaire
+```
+
+Or tap first, then install:
+
+```
+brew tap martinmatousek/vaire
+brew install --cask vaire
+```
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "martinmatousek/vaire"
-brew "<formula>"
+cask "vaire"
 ```
+
+Vaire is not notarized, so macOS will block the first launch — see the
+[main README](https://github.com/MartinMatousek/Vaire#install) for how to
+allow it.
 
 ## Documentation
 
