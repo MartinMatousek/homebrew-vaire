@@ -1,6 +1,6 @@
 cask "vaire" do
   version "0.1.1"
-  sha256 "5e741559b626c0a39765c3356f6cff12642fa16bca39032b0f9ae27def984b36"
+  sha256 "a0176cdf6ad56f45d734597ec3a21a64e6e2e46b1ce46c15bbcf4dc470cdb310"
 
   url "https://github.com/MartinMatousek/Vaire/releases/download/v#{version}/Vaire.zip"
   name "Vaire"
@@ -12,7 +12,7 @@ cask "vaire" do
   app "Vaire.app"
 
   zap trash: [
-    "~/Library/Group Containers/group.com.martinmatousek.vaire",
+    "~/Library/Application Support/Vaire",
     "~/Library/Preferences/com.martinmatousek.vaire.app.plist",
   ]
 
