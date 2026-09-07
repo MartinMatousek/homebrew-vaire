@@ -27,6 +27,9 @@ widget with a daily progress ring.
 - **Timesheet upload** (optional) — semi-automatically logs your time
   into an external web-based timesheet via a Chrome window you review
   and confirm, with optional 1Password autofill for the login step.
+- **Calendar meeting import** (optional) — the Fill day/week wizard can
+  suggest your calendar meetings as blocks too, once you enable it and
+  pick a calendar in Settings.
 
 ## Install
 
@@ -153,6 +156,17 @@ The underlying automation lives in `VaireUpload/` in the source repo, not
 in the cask — see
 [`VaireUpload/README.md`](https://github.com/MartinMatousek/Vaire/blob/main/VaireUpload/README.md)
 for the setup that needs (Node, Playwright).
+
+## Calendar meeting import
+
+The **Fill day…** / **Fill week…** wizard (see above) can also suggest
+your calendar meetings as candidate blocks, alongside git commits. It's
+off by default — enable **Import meetings from calendar** in Settings and
+pick which calendar to read from (a dropdown of your actual calendars —
+useful if a synced Exchange/Google account exposes more than one).
+Meetings with neither a location nor another attendee are treated as
+personal busy-time blocks and skipped, since those aren't meetings
+someone else called.
 
 ## Language
 

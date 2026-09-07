@@ -28,6 +28,9 @@ WidgetKit widget s denním ukazatelem postupu.
   do externího webového timesheetu přes okno Chrome, které zkontroluješ
   a potvrdíš, s volitelným automatickým vyplněním přihlášení přes
   1Password.
+- **Import schůzek z kalendáře** (volitelné) — průvodce doplněním dne/
+  týdne umí navrhnout i schůzky z kalendáře jako bloky, po zapnutí a
+  výběru kalendáře v Nastavení.
 
 ## Instalace
 
@@ -152,6 +155,17 @@ Developer.
 Automatizace na pozadí žije ve `VaireUpload/` ve zdrojovém repozitáři, ne
 v casku — nastavení (Node, Playwright), které potřebuje, viz
 [`VaireUpload/README.md`](https://github.com/MartinMatousek/Vaire/blob/main/VaireUpload/README.md).
+
+## Import schůzek z kalendáře
+
+Průvodce **Doplň den…** / **Doplň týden…** (viz výše) umí navrhnout i
+schůzky z kalendáře jako kandidátní bloky, vedle git commitů. Ve výchozím
+stavu je vypnutý — zapni **Importovat schůzky z kalendáře** v Nastavení a
+vyber, ze kterého kalendáře číst (rozbalovací seznam tvých skutečných
+kalendářů — užitečné, pokud synchronizovaný Exchange/Google účet nabízí
+víc než jeden). Schůzky bez místa a bez dalšího účastníka se berou jako
+osobní bloky obsazeného času a přeskočí se, protože to nejsou schůzky,
+které svolal někdo jiný.
 
 ## Jazyk
 
