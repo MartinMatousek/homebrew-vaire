@@ -1,6 +1,6 @@
 cask "vaire" do
-  version "1.3.13"
-  sha256 "27d3595266e5dba3d5943ea23b93b5ef36c69f10ed0cd2eaabfd2e6ec203b48f"
+  version "1.3.14"
+  sha256 "f95caeb66b98aa3539b373cb08a311bd751e66e2efa84bcd641f42c35a8a21e2"
 
   url "https://github.com/MartinMatousek/Vaire/releases/download/v#{version}/Vaire.zip"
   name "Vaire"
